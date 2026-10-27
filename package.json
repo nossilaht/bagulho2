@@ -1,28 +1,25 @@
 {
-  "name": "ci-minicurso",
-  "version": "1.0.0",
+  "name": "minicurso-ci",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/server.ts",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint ."
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.5",
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.5.0",
-    "@types/supertest": "^6.0.2",
-    "eslint": "^9.39.5",
-    "supertest": "^7.0.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.69.0",
-    "vitest": "^2.0.5"
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
   }
 }
